@@ -6,6 +6,8 @@ import PurchaseList from './components/PurchaseList';
 import BudgetSummary from './components/BudgetSummary';
 import './App.css';
 
+document.title = 'Financial Planner';
+
 function App() {
     const [purchases, setPurchases] = useState([]);
     const [budget, setBudget] = useState(1000);
