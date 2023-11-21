@@ -1,38 +1,128 @@
-.App {
+/* src/App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #212529; /* Set the overall background color for dark mode */
+  color: #ffffff; /* Set the overall text color for dark mode */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #343a40; /* Set the container background color for dark mode */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  color: #4caf50; /* Set the primary color for dark mode */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* AddPurchaseForm.css */
+
+.add-purchase-form {
+  background-color: #424242; /* Set the form background color for dark mode */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-purchase-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff; /* Set the text color for dark mode */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-purchase-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #757575; /* Set the border color for dark mode */
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.add-purchase-form button {
+  background-color: #4caf50; /* Set the button background color for dark mode */
+  color: #ffffff; /* Set the button text color for dark mode */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-purchase-form button:hover {
+  background-color: #45a049;
+}
+
+/* PurchaseList.css */
+
+.purchase-list {
+  background-color: #424242; /* Set the list background color for dark mode */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-list h2 {
+  color: #4caf50;
+}
+
+.purchase-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.purchase-list li {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+/* BudgetSummary.css */
+
+.budget-summary {
+  background-color: #424242; /* Set the summary background color for dark mode */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.budget-summary h2 {
+  color: #4caf50;
+}
+
+.budget-summary label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.budget-summary input {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #757575;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.budget-summary button {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.budget-summary button:hover {
+  background-color: #45a049;
 }
